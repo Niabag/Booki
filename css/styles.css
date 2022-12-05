@@ -1,0 +1,958 @@
+/* Fonts
+     ========================================================================== */
+@font-face {
+    font-family: 'Releway';
+    src: url('../fonts/Releway/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Eléments principaux de la page 
+ ==========================================================================*/
+
+body {
+    font-family: 'Releway', 'Arial', sans-serif;
+    color: #181818;
+}
+
+.block_page {
+    width: 95%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+/* Header/logo/Navbar
+     ========================================================================== */
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 30px 0px;
+}
+
+/* Logo */
+
+
+.block_logo {
+    width: 191px;
+    height: 90px;
+    background-image: url(../images/logo/Booki@3x.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Navigation */
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    padding: 25px;
+    font-size: 16px;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+
+}
+
+/* Main/Filtres/Barre_recherche
+     ========================================================================== */
+.hebergement_popularite {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.recherche_section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.recherche_section form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Main */
+
+
+
+/* Barre_recherche */
+
+
+.barre_recherche {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_map {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.barre {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.recherche {
+    display: flex;
+}
+
+.recherche input {
+    border: none;
+}
+
+#loupe{
+    display: none;
+}
+
+.bouton_recherche {
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.text_bouton {
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+/* Filtres */
+
+
+.filtres {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+}
+
+
+.filtres h3 {
+    margin-right: 20px;
+}
+
+.block_boutons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.style_boutons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    height: 43px;
+    border-radius: 30px;
+    margin-right: 20px;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.icon_filtre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.style_boutons span {
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+}
+
+.style_boutons:hover {
+    border: 2px solid #DEEBFF;
+    background-color: #0065FC;
+    color: white;
+
+}
+
+.info_block {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.info_block i {
+    margin-right: 5px;
+}
+
+.info_inlign {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.info_inlign p{
+    margin: 0px;
+}
+
+.info_inlign i{
+    margin-top: 5px;
+}
+
+
+/* Hebergments_section/Cards
+     ========================================================================== */
+
+/* Hebergments_section */
+
+.section_hebergements {
+    max-width: 73%;
+    min-width: 550px;
+    background-color: #F2F2F2;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.section_hebergements h2 {
+    margin-left: 30px;
+}
+
+.section_hebergements .Plus {
+    display: flex;
+    margin: 40px;
+    font-size: 16px;
+    color: #181818;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.align_cards_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Cards */
+
+.card_hebergements img {
+    width: 100%;
+    height: 160px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.align_cards_hebergement a{
+    display: flex;
+    width: 30%;
+    margin: 5px;
+    text-decoration: none;
+    color: #181818;
+}
+
+.card_hebergements {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+.pleine {
+    width: 5px;
+    margin-right: 8px;
+    color: #0065FC;
+}
+
+.vide {
+    color: #F2F2F2;
+}
+
+/* Populaire_ section/Cards
+     ========================================================================== */
+
+/* Populaire_section */
+
+.section_populaire {
+    min-width: 300px;
+    width: 25%;
+    background-color: #F2F2F2;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.titre_icon,
+.diagrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.diagrame {
+    font-size: 30px;
+}
+
+/* Cards */
+
+
+.centre_note {
+    margin-left: 30px;
+}
+
+.card_populaire img {
+    min-width: 50%;
+    width: 100px;
+    height: 160px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+
+.card_populaire {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px;
+   margin-bottom: 30px;
+}
+
+.align_cards_populaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section_populaire h2 {
+    margin-left: 30px;
+}
+
+.align_cards_populaire a{
+    display: flex;
+    text-decoration: none;
+    color: #181818;
+}
+
+/* Activités_section/Cards
+     ========================================================================== */
+
+/* Actvités_section */
+
+.section_activite {
+
+    margin-bottom: 40px;
+}
+
+.section_activite h2 {
+    margin-left: 30px;
+}
+
+
+.align_cards_activite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.align_cards_activite article {
+    gap: 50px;
+}
+
+.column_card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cards */
+
+.card_activite img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.card_large img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.card_horisontal img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.card_activite {
+    width: 95%;
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #F2F2F2;
+}
+
+.section_activite h3 {
+    margin-left: 20px;
+}
+
+.card_large,
+.card_horisontal {
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #F2F2F2;
+}
+
+.align_cards_activite a{
+    width: 25%;
+    text-decoration: none;
+    color: #181818;
+}
+
+.column_card a{
+    width: 95%;
+}
+
+/* Footer
+     ========================================================================== */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer ul li a {
+    font-size: 12px;
+    color: #181818;
+    text-decoration: none;
+}
+
+footer ul li {
+    margin: 10px 0px 10px 0px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer div {
+    padding: 20px 180px 20px 20px;
+}
+
+.Assistance {
+    padding-right: 20px;
+}
+
+/* Media queries Tablette/Telephone
+     ========================================================================== */
+
+/*============================ Tablette ========================================*/
+@media screen and (max-width: 992px) {
+    #bloc_page {
+        width: 95%;
+    }
+
+   
+
+    /* Header/logo/Navbar
+    ==================================================== */
+
+    /* Logo */
+
+    .block_logo {
+        width: 191px;
+        height: 90px;
+        background-image: url(../images/logo/Booki.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* Header */
+
+    nav a.active {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding: 0px 20px 20px 20px;
+    }
+
+    nav a.statique {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0px 45px 20px 45px;
+    }
+
+    nav li {
+        margin-right: 0px;
+    }
+
+    /* Main/Filtres/Barre_recherche
+    ========================================================================== */
+
+    .hebergement_popularite {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* Filtres */
+
+
+
+
+    /* Hebergments_section/Cards
+     ========================================================================== */
+
+    /* Hebergments_section */
+
+    .section_hebergements {
+        order: 1;
+        width: 90%;
+        background-color: white;
+    }
+
+    /* Cards */
+
+    .card_hebergements img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card_hebergements {
+        width: 95%;
+        box-shadow: 0px 0px 30px #333232;
+    }
+
+    .align_cards_hebergement a{
+        width: 100%;
+    }
+
+
+    /* Populaire_ section/Cards
+     ========================================================================== */
+
+    /* Populaire_section */
+
+    .section_populaire {
+        min-width: 100%;
+        width: 25%;
+    }
+
+    .titre_icon {
+        margin-right: 0px;
+    }
+
+    /* Cards */
+
+
+    .centre_note {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .centre_note i {
+        margin-top: 40px;
+    }
+
+
+    .card_populaire img {
+        width: 250px;
+        height: 200px;
+
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    /* Activités_section/Cards
+     ========================================================================== */
+
+    /* Actvités_section */
+
+    .align_cards_activite {
+        justify-content: space-around;
+    }
+
+    .align_cards_activite article {
+        margin-bottom: 30px;
+    }
+
+    .column_card {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    /* Cards */
+
+    .card_activite img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .card_large img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .card_horisontal img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    
+    .card_activite {
+        width: 75%;
+        padding: 0px 0px 10px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px #F2F2F2;
+    }
+    
+    .section_activite h3 {
+        margin-left: 20px;
+    }
+    
+    .card_large,
+    .card_horisontal {
+        width: 75%;
+        padding: 0px 0px 10px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px #F2F2F2;
+    }
+    
+
+    .card_activite,.card_horisontal,.card_large {
+        box-shadow: 0px 0px 30px #333232;
+    }
+
+    .align_cards_activite a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-decoration: none;
+        color: #181818;
+    }
+    
+
+    /* Footer
+    ========================================================================== */
+    footer {
+        display: flex;
+    }
+
+    footer div {
+        padding: 10px 80px 0px 40px;
+    }
+
+    .Assistance {
+        padding-right: 40px;
+    }
+}
+
+
+
+
+
+/*============================== Telephone =================================*/
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0px;
+    }
+
+    .block_page {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Main/Header/logo/Navbar
+      ======================================================== */
+    /* Header */
+    .block_logo {
+        background-image: url(../images/logo/Booki@3x.png);
+    }
+
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Navbar */
+
+
+    nav a.active {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding: 0px 50px 20px 50px;
+    }
+
+    nav a.statique {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0px 50px 20px 50px;
+    }
+
+    nav li {
+        margin-right: 0px;
+    }
+
+
+
+    /* Main/Filtres/Barre_recherche
+     ========================================================================== */
+
+    /* Barre_recherche */
+
+    .icon_map {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .barre {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+
+
+    .bouton_recherche {
+        margin-left: 220px;
+        border: none;
+        background-color: #0065FC;
+        border-radius: 10px 10px 10px 10px;
+        position: absolute;
+    }
+
+   input{
+       border-right: 0px;
+   }
+
+    .text_bouton {
+        display: none;
+        color: #F2F2F2;
+    }
+
+    /* Filtres */
+
+    .recherche_section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .filtres {
+        align-items: initial;
+        flex-direction: column;
+
+    }
+
+    .boutons_filtres {
+        display: inline;
+        flex-direction: column;
+    }
+
+    .style_boutons {
+        margin-top: 10px;
+    }
+
+    
+    #rechercher{
+        display: none;
+    }
+
+    #loupe, #loupe i{
+        display: flex;
+        padding-top: 1px;
+        margin: 7.5px 7px 7.5px 7px;
+    }
+
+    /* Hebergments_section/Cards
+     ========================================================================== */
+
+    /* Hebergments_section */
+
+    .section_hebergements {
+        max-width: 100%;
+        min-width: 70%;
+    }
+
+    /* Cards */
+
+    .card_hebergements img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .card_hebergements{
+        box-shadow: 0px 0px 30px #F2F2F2;
+    }
+
+    /* Populaire_section/Cards
+     ========================================================================== */
+
+    /* Populaire_section */
+
+    .section_populaire {
+        min-width: 100%;
+        width: 25%;
+        border-radius: 0px 0px 0px 0px;
+        margin-top: 15px;
+    }
+
+
+    /* Cards */
+
+    .centre_note {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .centre_note i {
+        margin-top: 5px;
+    }
+
+    .card_populaire {
+        width: 330px;
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+
+    .card_populaire img {
+        flex-shrink: 0;
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+
+    /* Activités_section/Cards
+     ========================================================================== */
+
+    /* Actvités_section */
+
+    .align_cards_activite article {
+        margin-bottom: 30px;
+    }
+
+    .column_card {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    /* Cards */
+
+    .card_activite img {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .card_large img {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    .card_horisontal img {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+
+    .card_activite,.card_horisontal,.card_large {
+        width: 90%;
+        box-shadow: 0px 0px 30px #F2F2F2;
+    }
+
+    /* Footer
+     ========================================================================== */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .Assistance {
+        padding-right: 20px;
+    }
+
+}
